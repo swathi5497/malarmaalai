@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malar Flower - Premium Decorative Garlands</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<!--Jaskiran kaur-->
+    <div class="popup-overlay active" id="newsletterPopup">
+    <div class="popup-content">
+        <button class="popup-close" type="button">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="popup-left">
+            <img src="offer.jpg" alt="Special Offer">
+        </div>
+        <div class="popup-right">
+            <div class="popup-header">
+                <h2>Join Our Newsletter!</h2>
+                <p>Get exclusive deals & fresh flower tips</p>
+            </div>
+            <div class="popup-body">
+                <p style="font-size: 0.95rem; color: #666; margin-bottom: 15px;">
+                    Subscribe now and get <strong style="color: #2d5016;">special offers</strong> delivered to your inbox!
+                </p>
+                <form class="popup-form" onsubmit="submitPopupForm(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">MALAR FLOWER</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#categories">Collection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#popular">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <div class="search-box me-3">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="nav-icons">
+                    <div class="icon-wrapper" id="wishlistIcon">
+                        <i class="far fa-heart"></i>
+                        <span class="badge-count" id="wishlistCount">0</span>
+                    </div>
+                    <div class="icon-wrapper" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge-count" id="cartCount">0</span>
+                    </div>
+                    <div class="icon-wrapper" id="profileIcon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-section" id="home">
+        <div class="hero-carousel">
+            <div class="hero-slide hero-slide-1 active"></div>
+            <div class="hero-slide hero-slide-2"></div>
+            <div class="hero-slide hero-slide-3"></div>
+            <div class="hero-slide hero-slide-4"></div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>Celebrate Every Moment<br>With Beautiful Garlands</h1>
+                        <p>Discover our stunning collection of handcrafted floral and decorative garlands perfect for weddings, festivals, and special occasions.</p>
+                        <button class="explore-btn">Explore Collection</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-indicators">
+            <span class="carousel-dot active"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+        </div>
+    </section>
+
+    <!-- Top Categories Section -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Top Categories</h2>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="category-card large-category">
+                        <img src="floarl_garland.webp" alt="Floral Garlands">
+                        <div class="category-label">Floral Garlands</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="category-card">
+                                <img src="marigold.webp" alt="Marigold Garlands">
+                                <div class="category-label">Marigold Garlands</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="category-card">
+                                <img src="wedding.jpg" alt="Wedding Garlands">
+                                <div class="category-label">Wedding Garlands</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card">
+                        <img src="rose.webp" alt="Rose Garlands">
+                        <div class="category-label">Rose Garlands</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card">
+                        <img src="jasmine.webp" alt="Jasmine Garlands">
+                        <div class="category-label">Jasmine Garlands</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card">
+                        <img src="festive.webp" alt="Festival Garlands">
+                        <div class="category-label">Festival Garlands</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card">
+                        <img src="orchid.jpg" alt="Orchid Garlands">
+                        <div class="category-label">Orchid Garlands</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Popular Section -->
+    
+<section class="popular-section" id="popular">
+    <div class="container">
+        <h2 class="section-title">Most Popular</h2>
+        <div class="row" id="productContainer">
+            
+            <!-- Product 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card position-relative" data-id="1">
+                    <img src="rose.webp" alt="Fresh Rose Garland" class="product-image">
+                    <div class="product-info">
+                        <h4>Premium Rose Garland</h4>
+                        <p class="product-price">₹899</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(127 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="product-icons">
+                        <button class="icon-btn wishlist-btn" onclick="toggleWishlist(1, 'Premium Rose Garland', 899, 'rose.webp')">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="icon-btn cart-btn" onclick="addToCart(1, 'Premium Rose Garland', 899, 'rose.webp')">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card position-relative" data-id="2">
+                    <img src="marigold.webp" alt="Marigold Garland" class="product-image">
+                    <div class="product-info">
+                        <h4>Fresh Marigold Garland</h4>
+                        <p class="product-price">₹599</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(203 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="product-icons">
+                        <button class="icon-btn wishlist-btn" onclick="toggleWishlist(2, 'Fresh Marigold Garland', 599, 'marigold.webp')">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="icon-btn cart-btn" onclick="addToCart(2, 'Fresh Marigold Garland', 599, 'marigold.webp')">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card position-relative" data-id="3">
+                    <img src="festive.webp" alt="Festive Garland" class="product-image">
+                    <div class="product-info">
+                        <h4>Festival Special Garland</h4>
+                        <p class="product-price">₹1,299</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(89 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="product-icons">
+                        <button class="icon-btn wishlist-btn" onclick="toggleWishlist(3, 'Festival Special Garland', 1299, 'festive.webp')">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="icon-btn cart-btn" onclick="addToCart(3, 'Festival Special Garland', 1299, 'festive.webp')">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card position-relative" data-id="4">
+                    <img src="floralll.webp" alt="floral Garland" class="product-image">
+                    <div class="product-info">
+                        <h4>Fresh Floral Garland</h4>
+                        <p class="product-price">₹2,500</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(500 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="product-icons">
+                        <button class="icon-btn wishlist-btn" onclick="toggleWishlist(4, 'Fresh Floral Garland', 2500, 'floralll.webp')">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="icon-btn cart-btn" onclick="addToCart(4, 'Fresh Floral Garland', 2500, 'floralll.webp')">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card position-relative" data-id="5">
+                    <img src="christmas.webp" alt="christmas Garland" class="product-image">
+                    <div class="product-info">
+                        <h4>Fresh Christmas Garland</h4>
+                        <p class="product-price">₹799</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(220 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="product-icons">
+                        <button class="icon-btn wishlist-btn" onclick="toggleWishlist(5, 'Fresh Christmas Garland', 799, 'christmas.webp')">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="icon-btn cart-btn" onclick="addToCart(5, 'Fresh Christmas Garland', 799, 'christmas.webp')">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card position-relative" data-id="6">
+                    <img src="jasmineee.jpg" alt="jasmine Garland" class="product-image">
+                    <div class="product-info">
+                        <h4>Fresh Jasmine Garland</h4>
+                        <p class="product-price">₹599</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(203 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="product-icons">
+                        <button class="icon-btn wishlist-btn" onclick="toggleWishlist(6, 'Fresh Jasmine Garland', 599, 'jasmineee.jpg')">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="icon-btn cart-btn" onclick="addToCart(6, 'Fresh Jasmine Garland', 599, 'jasmineee.jpg')">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Malar Flower</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>100% Fresh Flowers</h4>
+                        <p>We source the freshest flowers daily to ensure premium quality garlands for your special occasions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>Custom Designs</h4>
+                        <p>Create personalized garlands tailored to your preferences, themes, and color schemes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h4>Fast Delivery</h4>
+                        <p>Same-day delivery available for orders placed before 2 PM. We ensure timely delivery for your events.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h4>Handcrafted with Love</h4>
+                        <p>Each garland is carefully handcrafted by our skilled artisans with attention to every detail.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="Customer" class="reviewer-img">
+                            <div class="reviewer-info">
+                                <h5>Priya Sharma</h5>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Absolutely beautiful garlands! The roses were so fresh and the arrangement was stunning. Perfect for our wedding ceremony. Highly recommended!"</p>
+                        <span class="review-date">2 weeks ago</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=5" alt="Customer" class="reviewer-img">
+                            <div class="reviewer-info">
+                                <h5>Rajesh Kumar</h5>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Great quality and timely delivery! Ordered marigold garlands for Diwali and they exceeded my expectations. Will definitely order again."</p>
+                        <span class="review-date">1 month ago</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=9" alt="Customer" class="reviewer-img">
+                            <div class="reviewer-info">
+                                <h5>Lakshmi Iyer</h5>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"The jasmine garlands are divine! Fresh fragrance and beautifully strung. Customer service was excellent too. Thank you Malar Flower!"</p>
+                        <span class="review-date">3 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="floarl_garland.webp" alt="About Us" class="about-image">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title text-start">Our Story</h2>
+                    <p class="about-text">Malar Flower has been crafting beautiful floral garlands for over 15 years. What started as a small family business has grown into one of the most trusted names in decorative garlands.</p>
+                    <p class="about-text">We believe that every celebration deserves the beauty of fresh flowers. Our team of skilled artisans works tirelessly to create stunning garlands that add elegance and fragrance to your special moments.</p>
+                    <p class="about-text">From traditional temple garlands to contemporary wedding decorations, we offer a wide range of options to suit every occasion and budget. Our commitment to quality and customer satisfaction has earned us the trust of thousands of happy customers.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10K+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Varieties</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Occasions Section -->
+    <section class="occasions-section">
+        <div class="container">
+            <h2 class="section-title">Perfect for Every Occasion</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="occasion-card">
+                        <div class="occasion-icon">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <h4>Weddings</h4>
+                        <p>Make your special day even more memorable with our exquisite wedding garlands and floral decorations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="occasion-card">
+                        <div class="occasion-icon">
+                            <i class="fas fa-om"></i>
+                        </div>
+                        <h4>Religious Ceremonies</h4>
+                        <p>Traditional temple garlands and pooja flowers for all your spiritual needs and religious occasions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="occasion-card">
+                        <div class="occasion-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h4>Celebrations</h4>
+                        <p>Brighten up birthdays, anniversaries, and festivals with our vibrant and fresh floral garlands.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How fresh are your flowers?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We source our flowers fresh every morning from local flower markets. All garlands are made on the same day of delivery to ensure maximum freshness and longevity.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you offer same-day delivery?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! Orders placed before 2 PM are eligible for same-day delivery. We also offer express delivery for urgent orders at an additional charge.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I customize my garland?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! We offer full customization services. You can choose the type of flowers, colors, length, and design. Contact us with your requirements and we'll create the perfect garland for you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What is your minimum order quantity?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    There is no minimum order quantity. Whether you need a single garland or bulk orders for large events, we're here to serve you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    How long do the garlands last?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    With proper care, our garlands typically last 1-2 days. Keep them in a cool place, sprinkle water occasionally, and avoid direct sunlight for best results.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5>Visit Us</h5>
+                                <p>123 Flower Street, Gandhi Nagar<br>Chennai, Tamil Nadu 600001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5>Call Us</h5>
+                                <p>+91 98765 43210<br>+91 98765 43211</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5>Email Us</h5>
+                                <p>info@malarflower.com<br>orders@malarflower.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5>Working Hours</h5>
+                                <p>Mon - Sat: 6:00 AM - 8:00 PM<br>Sunday: 6:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form" id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-control">
+                                <option value="">Select Occasion</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="festival">Festival</option>
+                                <option value="temple">Temple/Religious</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get exclusive offers, fresh flower tips, and be the first to know about new arrivals!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title">MALAR FLOWER</h4>
+                    <p class="footer-text">Creating beautiful moments with fresh, handcrafted floral garlands for over 15 years.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Collection</a></li>
+                        <li><a href="#popular">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-heading">Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Wedding Garlands</a></li>
+                        <li><a href="#">Temple Flowers</a></li>
+                        <li><a href="#">Custom Designs</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                        <li><a href="#">Express Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-heading">Payment Methods</h5>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <p class="footer-text mt-3">We accept all major payment methods</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Malar Flower. All rights reserved. Designed and Developed by Jaskiran | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
